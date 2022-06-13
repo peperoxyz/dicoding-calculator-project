@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  /* color: white; */
+}
+
+h2 {
+  font-size: 40px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #6b8dd6;
+}
+
+.flex-container-column {
+  display: flex; /*Karena merupakan parent flex*/
+  flex-direction: column;
+
+  /* Properti pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.operator,
+.negative,
+.equals {
+  background-color: #ffd6ff;
+  border: 1px solid black;
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  /* background: -webkit-linear-gradient(top, #d2d2d2, #ddd); */
+  cursor: pointer;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.display {
+  background-color: #c8b6ff;
+  padding: 10px 20px;
+  font-size: 2em;
+  border: 1px solid rgb(255, 255, 255);
+  /* color: white; */
+}
+
+.num {
+  background-color: #bbd0ff;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.button:hover {
+  font-weight: bold;
+  background-image: linear-gradient(to left, #b2f7ef, #f7d6e0);
+  /* box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); */
+}
+
+.card {
+    margin: 100px auto;
+    width: 500px;
+    padding:20px ;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+}
